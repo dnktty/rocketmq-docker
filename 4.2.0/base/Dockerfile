@@ -13,7 +13,7 @@ WORKDIR  ${ROCKETMQ_HOME}
 
 RUN mkdir -p /opt/logs /opt/store
 
-RUN curl https://dist.apache.org/repos/dist/release/rocketmq/${ROCKETMQ_VERSION}/rocketmq-all-${ROCKETMQ_VERSION}-bin-release.zip -o rocketmq.zip
+RUN curl https://archive.apache.org/dist/rocketmq/${ROCKETMQ_VERSION}/rocketmq-all-${ROCKETMQ_VERSION}-bin-release.zip -o rocketmq.zip
 RUN unzip rocketmq.zip
 RUN rm rocketmq.zip
 
